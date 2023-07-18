@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.slide {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: auto 100px;
+    position: relative;
+}
+
+.info {
+    padding: 25px;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    background-image: url('images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: calc();
+    color: hsl(240, 38%, 20%);
+    font-family: cursive;
+    width: 57%;
+    margin-left: 20px;
+}
+
+.info p {
+    margin-top: 20px;
+
+}
+
+.info .name {
+    margin-top: 40px;
+    color: hsl(240, 38%, 20%);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.info .role {
+    color: hsl(240, 9%, 57%);
+}
+
+.img {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+}
+
+.slide::before {
+    content: url('images/pattern-bg.svg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -45%;
+    left: 45%;
+    z-index: -2;
+}
+
+.btns {
+    position: absolute;
+    right: 38%;
+    bottom: 8%;
+    background-color: rgb(237, 236, 236);
+    width: 100px;
+    padding: 17px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+}
+.prev{
+    color: rgb(153, 152, 152);
+    cursor: pointer;
+}
+.prev:hover{
+    color: rgb(58, 58, 58);
+    text-shadow: 2px 2px 4px #000;
+}
+.next{
+    color: rgb(153, 152, 152);
+    cursor: pointer;
+}
+.next:hover{
+    color: rgb(58, 58, 58);
+    text-shadow: 2px 2px 4px #000;
+}
+.two{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
